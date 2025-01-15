@@ -13,6 +13,9 @@
 body {
     font-family: "Inter", serif;
     background-color: #C76B0F;
+}
+
+.head {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -35,6 +38,21 @@ p {
     font-size: 150%;
 }
 
+.body {
+    position: relative;
+    left: 40%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    color: #F6D193;
+}
+h3 {
+    font-family: "JetBrains Mono";
+    font-size: 180%;
+}
+p {
+    margin-bottom: 1px;
+}
 .flexbox {
     display: flex;
     justify-content: space-between;
@@ -42,7 +60,14 @@ p {
     padding-left: 5%;
 }
 
+.appearOnScroll {
+    opacity: 0;
+}
 
+.disappearOnScroll {
+    position:fixed;
+    top: 500px;
+}
 
 /* typewriter effect from https://css-tricks.com/snippets/css/typewriter-effect/ */
 .typewriter h1 {
@@ -86,6 +111,8 @@ p {
 }
 
 .cup {
+    position: fixed;
+    top: 250px;
     margin: 0;
     width: 100px;
     height: 200px;
