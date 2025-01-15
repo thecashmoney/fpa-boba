@@ -89,8 +89,7 @@ p {
     margin: 0;
     width: 100px;
     height: 200px;
-    background: #fff;
-    border: 5px solid #000;
+    border: 2px solid #F2D0A4;
     border-radius: 0 0 25px 25px;
     overflow: hidden;
     transform: translateX(0);
@@ -102,6 +101,6 @@ p {
     bottom: 0;
     width: 100%;
     height: 0;
-    background-color: #3498db;
+    background-color: #bf8445;
     transition: height 0.1s ease-out;
 }
