@@ -23,12 +23,9 @@ function onScroll() {
             text.style.opacity = opacity;
         });
     }
-    else if (scrollPosition > 300) {
-        let liquidHeight = 0;
-        if (liquidHeight < 150) {
-            liquidHeight = ((scrollPosition - 300)) * 0.5; // 150px is the full height of the cup
-            liquid.style.height = `${liquidHeight}px`;
-        }
+    else if (scrollPosition > 300 && scrollPosition < 400) {
+        liquidHeight = ((scrollPosition - 300)) * 1.45; // 150px is the full height of the cup
+        liquid.style.height = `${liquidHeight}px`;
     }
 }
 
