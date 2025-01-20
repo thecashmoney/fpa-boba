@@ -6,7 +6,7 @@ const appearingScrollText = document.querySelectorAll('.appearOnScroll');
 function onScroll() {
     const scrollPosition = window.scrollY;
     const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-    //console.log(scrollPosition);
+    console.log(scrollPosition);
 
     //move cup
     if (scrollPosition < 225) {
@@ -27,9 +27,8 @@ function onScroll() {
             text.style.opacity = opacity;
         });
     }
-    else if (scrollPosition > 1000 && scrollPosition < 1300) {
-        liquidHeight = 105-((scrollPosition - 1000)/3.8);
-        console.log(liquidHeight);
+    else if (scrollPosition > 500 && scrollPosition < 800) {
+        liquidHeight = 105-((scrollPosition - 500)/4);
         liquid.style.top = `${liquidHeight}%`;
     }
     else if (scrollPosition > 1500 && scrollPosition < 1600) {
