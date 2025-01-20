@@ -14,8 +14,8 @@ html {
 }
 body {
     background-attachment: fixed;
-    font-family: "Inter", serif;
     height: 100%;
+    font-family: "Inter", serif;
     background: rgb(251,22,17);
     background: linear-gradient(319deg, rgba(251,22,17,1) 0%, rgba(254,202,67,1) 100%, rgba(254,202,67,1) 100%);
 }
