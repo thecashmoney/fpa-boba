@@ -2,12 +2,11 @@ const cup = document.querySelector('.cup');
 const liquid = document.querySelector('.liquid');
 const disappearingScrollText = document.querySelector('.disappearOnScroll');
 const appearingScrollText = document.querySelectorAll('.appearOnScroll');
-const firstStep = document.querySelector('.first');
 
 function onScroll() {
     const scrollPosition = window.scrollY;
     const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-    console.log(scrollPosition);
+    //console.log(scrollPosition);
 
     //move cup
     if (scrollPosition < 225) {
@@ -19,7 +18,6 @@ function onScroll() {
         appearingScrollText.forEach(text => {
             text.style.opacity = 1 - opacity;
         });
-        firstStep.style.opacity = 1 - opacity;
     }
 
     //change text opacity
@@ -28,11 +26,13 @@ function onScroll() {
         appearingScrollText.forEach(text => {
             text.style.opacity = opacity;
         });
-        firstStep.style.opacity = opacity;
     }
-    else if (scrollPosition > 300 && scrollPosition < 400) {
-        liquidHeight = ((scrollPosition - 300)) * 1.45; // 150px is the full height of the cup
-        liquid.style.height = `${liquidHeight}px`;
+    else if (scrollPosition > 1000 && scrollPosition < 1300) {
+        liquidHeight = 105-((scrollPosition - 1000)/3.8);
+        console.log(liquidHeight);
+        liquid.style.top = `${liquidHeight}%`;
+    }
+    else if (scrollPosition > 1500 && scrollPosition < 1600) {
     }
 }
 

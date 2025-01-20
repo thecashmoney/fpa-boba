@@ -9,15 +9,16 @@
     src: url("assets/fonts/JetBrainsMono-Bold.woff2");
     font-weight: bold;
 }
+
 html {
     height: 100%;
 }
+
 body {
     background-attachment: fixed;
     height: 100%;
     font-family: "Inter", serif;
-    background: rgb(251,22,17);
-    background: linear-gradient(319deg, rgba(251,22,17,1) 0%, rgba(254,202,67,1) 100%, rgba(254,202,67,1) 100%);
+    background-color: #C76B0F;
 }
 
 .head {
@@ -67,9 +68,8 @@ h3 {
 }
 
 
-.first{
-    opacity: 0;
-    background-color:#d6914e;
+.textBox {
+    background-color: #d6914e;
     padding: 5%;
     margin: 5%;
     height: 45%;
@@ -81,7 +81,7 @@ h3 {
 }
 
 .disappearOnScroll {
-    position:fixed;
+    position: fixed;
     top: 80%;
 }
 
@@ -139,7 +139,7 @@ h3 {
     transition: transform 0.3s ease-out;
 }
 
-.liquid {
+/* .liquid:before {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -147,4 +147,35 @@ h3 {
     background-color: #bf8445;
     border-radius: 10px 10px 0 0;
     transition: height 0.1s ease-out;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    transition: all 1s;
+} */
+
+
+.liquid {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    border-radius: 130px;
+    background-color: #bf8445;
+    top: 105%;
+    left: 50%;
+    transform: translate(-50%);
+    animation: wave 5s infinite linear;
+    transition: all 1s;
+}
+
+@keyframes wave {
+    0% {
+        transform: translate(-50%) rotate(-180deg);
+
+    }
+
+
+    100% {
+        transform: translate(-50%) rotate(360deg);
+    }
 }
