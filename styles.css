@@ -76,7 +76,7 @@ h3 {
 
 .disappearOnScroll {
     position: fixed;
-    top: 80%;
+    top: 90%;
 }
 
 /* typewriter effect from https://css-tricks.com/snippets/css/typewriter-effect/ */
