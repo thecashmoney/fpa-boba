@@ -43,7 +43,7 @@ function onScroll() {
             bobaHeight = 120-((scrollPosition - 1200)/(3.4 + index/20));
             boba.style.bottom = `${bobaHeight}%`;
 
-            const opacity = Math.min((scrollPosition - 1200)/400, 0.8);
+            const opacity = Math.min((scrollPosition - 1200)/400, 0.7);
             boba.style.opacity = opacity;
         });
     }
