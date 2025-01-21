@@ -28,7 +28,7 @@ function onScroll() {
         });
     }
     else if (scrollPosition > 500 && scrollPosition < 800) {
-        liquidHeight = 105-((scrollPosition - 500)/4);
+        liquidHeight = 105-((scrollPosition - 500)/3.9);
         liquid.style.top = `${liquidHeight}%`;
     }
     else if (scrollPosition > 1500 && scrollPosition < 1600) {

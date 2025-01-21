@@ -136,14 +136,14 @@ h3 {
 .liquid {
     content: "";
     position: absolute;
-    width: 320px;
-    height: 320px;
-    border-radius: 130px;
+    width: 350px;
+    height: 350px;
+    border-radius: 140px;
     background-color: #bf8445;
     top: 105%;
     left: 50%;
     transform: translate(-50%);
-    animation: wave 5s infinite linear;
+    animation: wave 7s infinite linear;
     transition: all 1s;
 }
 
@@ -168,6 +168,7 @@ h3 {
     background-color: #000;
     border-radius: 50%;
     animation: fall 2s forwards;
+    z-index: 5;
 }
 
 @keyframes fall {
