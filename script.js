@@ -15,6 +15,7 @@ function onScroll() {
     if (scrollPosition < 225) {
         const moveDistance = (scrollPosition/220) * -1 * (window.innerWidth*0.3);
         cup.style.transform = `translateX(${moveDistance}px)`;
+        cup.style.top = `${45-(scrollPosition/20)}%`;
 
         const opacity = 1 - Math.min(scrollPosition / 200, 1);
         disappearingScrollText.style.opacity = opacity;
