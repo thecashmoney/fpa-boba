@@ -88,6 +88,15 @@ p.appearAtEnd {
     top: 80%;
 }
 
+img.appearAtEnd {
+    opacity: 0;
+    position: fixed;
+    top: 35%;
+    height: 30%;
+    rotate: 20deg;
+    left: 55%;
+}
+
 h2.appearAtEnd {
     opacity: 0;
     position: fixed;

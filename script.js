@@ -40,7 +40,7 @@ function onScroll() {
     //add boba
     else if (scrollPosition > 1200 && scrollPosition < 1600) {
         boba.forEach((boba, index) => {
-            bobaHeight = 120-((scrollPosition - 1200)/(3.3 + index/20));
+            bobaHeight = 120-((scrollPosition - 1200)/(3.4 + index/20));
             boba.style.bottom = `${bobaHeight}%`;
 
             const opacity = Math.min((scrollPosition - 1200)/400, 0.8);
