@@ -3,6 +3,7 @@ const liquid = document.querySelector('.liquid');
 const disappearingScrollText = document.querySelector('.disappearOnScroll');
 const appearingScrollText = document.querySelectorAll('.appearOnScroll');
 const boba = document.querySelectorAll('.boba');
+const straw = document.querySelector('.straw');
 const disappearAtEnd = document.querySelectorAll('.disappearAtEnd');
 const appearAtEnd = document.querySelectorAll('.appearAtEnd');
 
@@ -51,15 +52,17 @@ function onScroll() {
 
     else if (scrollPosition > 1800 && scrollPosition < 2000) {
         //move cup to center
-        const moveDistance = ((scrollPosition-2200));
-        cup.style.transform = `translateX(${moveDistance}px)`;
+        cup.style.transform = `translateX(${scrollPosition-2200}px)`;
+        straw.style.transform = `translateX(${scrollPosition-2230}px)`;
+        straw.style.top = `${(scrollPosition-1950)/2.5}%`;
+        console.log(scrollPosition-1980)
 
         //disappear text at top
         const opacity = 1 - Math.min((scrollPosition - 1800) / 200, 1);
         disappearAtEnd.forEach(text => {
             text.style.opacity = opacity;
         });
-
+        straw.style.opacity = 1 - opacity;
         appearAtEnd.forEach(text => {
             text.style.opacity = 1 - opacity;
         });
