@@ -52,7 +52,7 @@ function onScroll() {
 
     else if (scrollPosition > 1600 && scrollPosition < 2000) {
         //move cup to center
-        const cupTransform = Math.max(scrollPosition-2200, -400);
+        const cupTransform = Math.max(scrollPosition-2200, -300);
         cup.style.transform = `translateX(${cupTransform}px)`;
         straw.style.transform = `translateX(${cupTransform-30}px)`;
         straw.style.top = `${(scrollPosition-1950)/2.5}%`;
