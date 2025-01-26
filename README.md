@@ -11,6 +11,7 @@
 <h1></h1>
 This project uses CSS animations controlled by scrolling on JS. As the user scrolls through the pre-requisites for the workshop, boba is slowly added on and the user sees a completed drink at the end! The website also shows the sticker handed out at the workshop. Majority of the time spent on this project was spent on animations and scroll behavior.  
 <h1></h1>
+
 Tools used:  
 [Typewriter effect](https://css-tricks.com/snippets/css/typewriter-effect/)  
 [Coolors](https://coolors.co/c03221-f7f7ff-f2d0a4-545e75-3f826d)  
