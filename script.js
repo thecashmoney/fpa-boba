@@ -40,7 +40,7 @@ function onScroll() {
     }
 
     //add boba
-    else if (scrollPosition > 1200 && scrollPosition < 1600) {
+    else if (scrollPosition > 800 && scrollPosition < 1600) {
         boba.forEach((boba, index) => {
             bobaHeight = 120-((scrollPosition - 1200)/(3.4 + index/20));
             boba.style.bottom = `${bobaHeight}%`;
