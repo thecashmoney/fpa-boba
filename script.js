@@ -34,7 +34,7 @@ function onScroll() {
     }
 
     //fill with liquid
-    else if (scrollPosition > 500 && scrollPosition < 800) {
+    else if (scrollPosition > 300 && scrollPosition < 800) {
         liquidHeight = 105-((scrollPosition - 500)/3.8);
         liquid.style.top = `${liquidHeight}%`;
     }
