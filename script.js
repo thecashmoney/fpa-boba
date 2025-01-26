@@ -50,10 +50,11 @@ function onScroll() {
         });
     }
 
-    else if (scrollPosition > 1800 && scrollPosition < 2000) {
+    else if (scrollPosition > 1600 && scrollPosition < 2000) {
         //move cup to center
-        cup.style.transform = `translateX(${scrollPosition-2200}px)`;
-        straw.style.transform = `translateX(${scrollPosition-2230}px)`;
+        const cupTransform = Math.max(scrollPosition-2200, -400);
+        cup.style.transform = `translateX(${cupTransform}px)`;
+        straw.style.transform = `translateX(${cupTransform-30}px)`;
         straw.style.top = `${(scrollPosition-1950)/2.5}%`;
         console.log(scrollPosition-1980)
 
