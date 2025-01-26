@@ -16,4 +16,6 @@ Tools used:
 [Typewriter effect](https://css-tricks.com/snippets/css/typewriter-effect/)  
 [Coolors](https://coolors.co/c03221-f7f7ff-f2d0a4-545e75-3f826d)  
 [Wavy effect](https://www.geeksforgeeks.org/how-to-create-waves-on-button-with-css-and-html/)  
+[Logo](https://boba.hackclub.com) at top of website  
+[Boba sticker](https://hackclub.com/stickers) at bottom of website
 Made with the help of ChatGPT for CSS animations (cup movement, reference for generating shapes)
